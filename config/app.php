@@ -175,7 +175,7 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
-        // KeJyun\Larapack\LarapackServiceProvider::class,
+        KeJyun\Larapack\LarapackServiceProvider::class,
 
     ],
 
@@ -228,7 +228,7 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
-        // 'Larapack' => KeJyun\Larapack\LarapackFacade::class,
+        'Larapack' => KeJyun\Larapack\Facades\LarapackFacade::class,
     ],
 
 ];

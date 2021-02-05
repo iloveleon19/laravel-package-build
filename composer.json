@@ -32,10 +32,10 @@
         "laravel": {
             "dont-discover": [],
             "providers": [
-                "keJyun\\Larapack\\LarapackServiceProvider"
+                "KeJyun\\Larapack\\LarapackServiceProvider"
             ],
             "aliases": {
-                "Larapack": "keJyun\\Larapack\\LarapackFacade"
+                "Larapack": "keJyun\\Larapack\\Facades\\LarapackFacade"
             }
         }
     },
@@ -44,7 +44,7 @@
             "App\\": "app/",
             "Database\\Factories\\": "database/factories/",
             "Database\\Seeders\\": "database/seeders/",
-            "keJyun\\Larapack\\": "packages/kejyun/larapack/src/"
+            "KeJyun\\Larapack\\": "packages/kejyun/larapack/src/"
         }
     },
     "autoload-dev": {

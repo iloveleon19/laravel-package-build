@@ -12,7 +12,18 @@
     "require": {},
     "autoload": {
         "psr-4":{
-            "KeJyun\\Larapack\\": "src"
+            "KeJyun\\Larapack\\": "src/"
+        }
+    },
+    "extra":{
+        "laravel":{
+            "providers": [
+                "KeJyun\\Larapack\\LarapackServiceProvider"
+            ],
+            "aliases": {
+                "Larapack": "keJyun\\Larapack\\Facades\\LarapackFacade"
+            }
         }
     }
+
 }
