@@ -18,4 +18,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/package', [PackageController::class, 'larapack']);
+Route::get('/larapack', [PackageController::class, 'larapack']);
+Route::get('/devpack', [PackageController::class, 'devpack']);

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4a16c3c541bd99241cab1c21ce8e83ac",
+    "content-hash": "58dfaed5f5710caac08c80c818f1ff47",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -893,6 +893,45 @@
             "time": "2020-09-30T07:37:11+00:00"
         },
         {
+            "name": "kejyun/larapack",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "/home/vagrant/code/laravel-blog/packages/kejyun/larapack",
+                "reference": "08ae0edd513bc75aad579c7bbcbd2774e8abf25e"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "KeJyun\\Larapack\\LarapackServiceProvider"
+                    ],
+                    "aliases": {
+                        "Larapack": "KeJyun\\Larapack\\Facades\\Larapack"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "KeJyun\\Larapack\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "KeJyun",
+                    "email": "kejyun@gmail.com"
+                }
+            ],
+            "description": "KJ Larapack",
+            "transport-options": {
+                "symlink": true,
+                "relative": false
+            }
+        },
+        {
             "name": "laravel/framework",
             "version": "v8.26.1",
             "source": {
@@ -1379,6 +1418,63 @@
                 }
             ],
             "time": "2021-01-18T20:58:21+00:00"
+        },
+        {
+            "name": "leon/devpack",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "/home/vagrant/code/laravel-blog/packages/leon/devpack",
+                "reference": "42972981848422579793789cedbca80d31dbe584"
+            },
+            "require": {
+                "illuminate/support": "~7|~8"
+            },
+            "require-dev": {
+                "orchestra/testbench": "~5|~6",
+                "phpunit/phpunit": "~9.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Leon\\Devpack\\DevpackServiceProvider"
+                    ],
+                    "aliases": {
+                        "Devpack": "Leon\\Devpack\\Facades\\Devpack"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Leon\\Devpack\\": "src/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Leon\\Devpack\\Tests\\": "tests"
+                }
+            },
+            "license": [
+                "license"
+            ],
+            "authors": [
+                {
+                    "name": "author name",
+                    "email": "author email",
+                    "homepage": "author homepage"
+                }
+            ],
+            "description": ":package_description",
+            "homepage": "https://github.com/leon/devpack",
+            "keywords": [
+                "Devpack",
+                "Laravel"
+            ],
+            "transport-options": {
+                "symlink": true,
+                "relative": false
+            }
         },
         {
             "name": "monolog/monolog",
@@ -5304,6 +5400,72 @@
             "time": "2020-07-09T08:09:16+00:00"
         },
         {
+            "name": "jeroen-g/laravel-packager",
+            "version": "V2.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Jeroen-G/laravel-packager.git",
+                "reference": "8462a4ac5ec66b151dd6a6288be5df0beb59bc1d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Jeroen-G/laravel-packager/zipball/8462a4ac5ec66b151dd6a6288be5df0beb59bc1d",
+                "reference": "8462a4ac5ec66b151dd6a6288be5df0beb59bc1d",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "ext-zip": "*",
+                "guzzlehttp/guzzle": "~7",
+                "illuminate/support": "^5.0|^6.0|^7.0|^8.0",
+                "php": "^7.1"
+            },
+            "require-dev": {
+                "orchestra/testbench": ">=3.8",
+                "phpunit/phpunit": "^8.0|^9.0"
+            },
+            "suggest": {
+                "sensiolabs/security-checker": "Required to use the security check command"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "JeroenG\\Packager\\PackagerServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "JeroenG\\Packager\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "EUPL-1.1"
+            ],
+            "authors": [
+                {
+                    "name": "JeroenG",
+                    "email": "jeroengjeroeng@gmail.com",
+                    "homepage": "https://github.com/Jeroen-G"
+                }
+            ],
+            "description": "A cli tool for creating Laravel packages.",
+            "homepage": "https://github.com/Jeroen-G/laravel-packager",
+            "keywords": [
+                "Skeleton",
+                "laravel",
+                "package",
+                "packager"
+            ],
+            "support": {
+                "issues": "https://github.com/Jeroen-G/laravel-packager/issues",
+                "source": "https://github.com/Jeroen-G/laravel-packager/tree/V2.6"
+            },
+            "time": "2020-10-09T19:42:50+00:00"
+        },
+        {
             "name": "laravel/sail",
             "version": "v1.3.0",
             "source": {
@@ -7354,7 +7516,10 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "kejyun/larapack": 20,
+        "leon/devpack": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

@@ -21,7 +21,7 @@
                 "KeJyun\\Larapack\\LarapackServiceProvider"
             ],
             "aliases": {
-                "Larapack": "keJyun\\Larapack\\Facades\\LarapackFacade"
+                "Larapack": "KeJyun\\Larapack\\Facades\\Larapack"
             }
         }
     }
